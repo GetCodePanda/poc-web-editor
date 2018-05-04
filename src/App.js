@@ -11,13 +11,23 @@ class App extends Component {
 
   render() {
     return (
-      <AceEditor
-        mode="sql"
-        theme="monokai"
-        onChange={this.onChange}
-        name="UNIQUE_ID_OF_DIV"
-        editorProps={{$blockScrolling: true}}
-      />
+      <div>
+        <AceEditor
+          mode="sql"
+          theme="monokai"
+          onChange={this.onChange}
+          name="UNIQUE_ID_OF_DIV"
+          editorProps={{$blockScrolling: true}}
+        />
+        <button>Create</button>
+        <button>Alter</button>
+        <button>Drop</button>
+        <button>Truncate</button>
+        <button>Comment</button>
+        <button>Save</button>
+        <button>Clear</button>
+        <button>Run Query</button>
+      </div>
     );
   }
 }
